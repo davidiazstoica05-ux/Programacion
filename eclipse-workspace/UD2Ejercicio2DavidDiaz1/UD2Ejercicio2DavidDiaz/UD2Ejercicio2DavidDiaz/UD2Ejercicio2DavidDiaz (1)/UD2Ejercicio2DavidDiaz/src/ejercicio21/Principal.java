@@ -1,0 +1,75 @@
+package ejercicio21;
+
+import utilidades.Leer;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double suma1, suma2, resta1, resta2, mult1, mult2, div1, div2, resul1, resultres, resul2, resultdiv;
+
+		int opcion, num;
+
+		do {
+			System.out.println("\n\t  Mini-calculadora");
+			System.out.println("1. Suma");
+			System.out.println("2. Resta");
+			System.out.println("3. Multiplicar");
+			System.out.println("4. Dividir");
+			System.out.println("5. Par o impar");
+			System.out.println("0. Salir");
+			System.out.print("Elige una opción: ");
+			opcion = Leer.datoInt();
+
+			switch (opcion) {
+			case 1:
+				System.out.print("Primer número: ");
+				suma1 = Leer.datoDouble();
+				System.out.print("Segundo número: ");
+				suma2 = Leer.datoDouble();
+				resul1 = suma1 + suma2;
+				System.out.println("El resultado es: " + resul1);
+				break;
+			case 2:
+				System.out.print("Primer número: ");
+				resta1 = Leer.datoDouble();
+				System.out.print("Segundo número: ");
+				resta2 = Leer.datoDouble();
+				resultres = resta1 - resta2;
+				System.out.println("El resultado es: " + resultres);
+				break;
+			case 3:
+				System.out.print("Primer número: ");
+				mult1 = Leer.datoDouble();
+				System.out.print("Segundo número: ");
+				mult2 = Leer.datoDouble();
+				resul2 = mult1 * mult2;
+				System.out.println("El resultado es: " + resul2);
+				break;
+			case 4:
+				System.out.print("Primer número: ");
+				div1 = Leer.datoDouble();
+				System.out.print("Segundo número: ");
+				div2 = Leer.datoDouble();
+				if (div2 != 0) {
+					resultdiv = div1 / div2;
+					System.out.printf("Resultado: %.2f\n", resultdiv);
+				} else {
+					System.err.println("Error: No se puede dividir por 0");
+				}
+				break;
+			case 5:
+				System.out.print("Introduce un número entero: ");
+				num = Leer.datoInt();
+				if (num % 2 == 0) {
+					System.out.println(num + " es par");
+				} else {
+					System.out.println(num + " es impar");
+				}
+				break;
+			}
+		} while (opcion != 0);
+		System.out.println("---------------------------------------");
+		System.out.println("Gracias por usar nuestro programa");
+	}
+}

@@ -1,0 +1,21 @@
+package ejercicio2;
+
+public class principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//Piscina Cuadrada:
+			double largo=50, ancho=21, profun=2.5, volumen;
+		//Piscina Circular:
+			double alto=1.8, radio=12, volumen1;
+		
+		System.out.println("Hola, este programa le ayudara resolver los m2 de su piscina.");
+		
+			
+			
+			
+		
+	}
+
+}

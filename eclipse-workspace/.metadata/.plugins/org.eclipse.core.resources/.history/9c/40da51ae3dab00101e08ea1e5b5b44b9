@@ -1,0 +1,149 @@
+package ejercicio21;
+
+import utilidades.Leer;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 int respuesta = 0, topeSuma = 0, topeResta = 0, topeMulti = 0, topeDividir = 0;
+	     int parImpar = 0;
+	     int DOS = 2;
+	     double num = 0, suma = 0, resta = 0, multi = 1, division = 0, numeroPar = 0;
+	     
+        do {
+            System.out.println("\n¿Qué desea hacer?");
+            System.out.println("1. Sumar");
+            System.out.println("2. Restar");
+            System.out.println("3. Dividir");
+            System.out.println("4. Multiplicar");
+            System.out.println("5. Comprobar si un número es par o impar");
+            System.out.println("0. Salir");
+           System.out.println("Opcion");
+            respuesta = Leer.datoInt();
+
+            switch (respuesta) {
+            case 1:
+                // SUMA
+                suma = 0;
+                System.out.println("\nUsted ha elegido SUMA");
+                System.out.print("¿Cuántos números desea sumar? ");
+                topeSuma = Leer.datoInt();
+
+                for (int i = 0; i < topeSuma; i++) {
+                    System.out.print("Número " + (i + 1) + ": ");
+                    num = Leer.datoDouble();
+                    suma += num;
+                }
+
+                parImpar = (int) suma % DOS;
+                if (parImpar == 0)
+                    System.out.println("El resultado es PAR");
+                else
+                    System.out.println("El resultado es IMPAR");
+
+                System.out.printf("La suma final es: %.2f\n", suma);
+                break;
+
+            case 2:
+                // RESTA
+                resta = 0;
+                System.out.println("\nUsted ha elegido RESTA");
+                System.out.print("¿Cuántos números desea restar? ");
+                topeResta = Leer.datoInt();
+
+                for (int i = 0; i < topeResta; i++) {
+                    System.out.print("Número " + (i + 1) + ": ");
+                    num = Leer.datoDouble();
+                    if (i == 0)
+                        resta = num;
+                    else
+                        resta -= num;
+                }
+
+                parImpar = (int) resta % DOS;
+                if (parImpar == 0)
+                    System.out.println("El resultado es PAR");
+                else
+                    System.out.println("El resultado es IMPAR");
+
+                System.out.printf("La resta final es: %.2f\n", resta);
+                break;
+
+            case 3:
+                // DIVISIÓN
+                division = 0;
+                System.out.println("\nUsted ha elegido DIVISIÓN");
+                System.out.print("¿Cuántos números desea dividir? ");
+                topeDividir = Leer.datoInt();
+
+                for (int i = 0; i < topeDividir; i++) {
+                    System.out.print("Número " + (i + 1) + ": ");
+                    num = Leer.datoDouble();
+
+                    if (i == 0) {
+                        division = num;
+                    } else {
+                        if (num == 0) {
+                            System.out.println("❌ No se puede dividir entre 0. Se ignora este número.");
+                            continue;
+                        }
+                        division /= num;
+                    }
+                }
+
+                parImpar = (int) division % DOS;
+                if (parImpar == 0)
+                    System.out.println("El resultado es PAR");
+                else
+                    System.out.println("El resultado es IMPAR");
+
+                System.out.printf("La división final es: %.2f\n", division);
+                break;
+
+            case 4:
+                // MULTIPLICACIÓN
+                multi = 1;
+                System.out.println("\nUsted ha elegido MULTIPLICACIÓN");
+                System.out.print("¿Cuántos números desea multiplicar? ");
+                topeMulti = Leer.datoInt();
+
+                for (int i = 0; i < topeMulti; i++) {
+                    System.out.print("Número " + (i + 1) + ": ");
+                    num = Leer.datoDouble();
+                    multi *= num;
+                }
+
+                parImpar = (int) multi % DOS;
+                if (parImpar == 0)
+                    System.out.println("El resultado es PAR");
+                else
+                    System.out.println("El resultado es IMPAR");
+
+                System.out.printf("La multiplicación final es: %.2f\n", multi);
+                break;
+
+            case 5:
+                // PAR O IMPAR DIRECTO (sin submenú)
+                System.out.println("\nUsted ha elegido comprobar PAR o IMPAR");
+                System.out.print("Introduzca un número: ");
+                numeroPar = Leer.datoDouble();
+
+                parImpar = (int) numeroPar % DOS;
+                if (parImpar == 0)
+                    System.out.println("El número es PAR");
+                else
+                    System.out.println("El número es IMPAR");
+                break;
+
+            case 0:
+                System.out.println("👋 Saliendo de la calculadora...");
+                break;
+
+            default:
+                System.out.println("❌ Opción no válida. Intente de nuevo.");
+                break;
+            }
+
+        } while (respuesta != 0);
+    }

@@ -1,0 +1,18 @@
+package ejercicio2;
+
+public class principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int num1=3, num2=5, num3=9,num4=1, resul, resul2;
+		
+		resul=num1+num2+num3;
+	
+		
+		System.out.println("Hola el resultado de la suma de los valores: 3,9 y 5 es igual a "+resul);
+		resul2=resul-num4;
+		System.out.println("n/Sí le restamos el valor 1 al resultado anterior sería: "+resul2);
+		
+	}
+}

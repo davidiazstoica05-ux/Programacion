@@ -1,0 +1,26 @@
+package ejercicio2;
+
+public class principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		double largo= 50; 
+		double alto= 21;
+		double ancho= 2.5;
+		double num1= 50, num2= 21, num3=2.5; 
+		double resultado;
+		char m;
+		
+		resultado=alto*largo*ancho;
+		
+		
+		
+		
+		
+		System.out.println("el resultado de la primera piscina es: " +resultado);
+		
+
+	}
+
+}

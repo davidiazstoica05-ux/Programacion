@@ -1,0 +1,68 @@
+package ejercicio21;
+
+import utilidades.Leer;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*
+		 * Realizar una “mini-calculadora”, que realice las siguientes operaciones:
+		 * suma, resta, multiplicación, división y decir si un número es par o impar. Se
+		 * hará con un menú, y se pedirá en cada caso del switch los datos necesarios
+		 * para realizar las operaciones. Se valorarán las comprobaciones que se hagan
+		 * sobre los datos introducidos (por ejemplo, no dividir por cero).
+		 */
+
+		int respuesta,tope , dos = 2;
+		double parOimpar=0,leer,resul=0;
+
+		System.out.println("Bienvenido a la Mini-Calculadora");
+
+		do {
+
+			System.out.println("¿Que desea hacer?\n");
+			System.out.println("Pulse 1 para sumar ");
+			System.out.println("Pulse 2 para restar ");
+			System.out.println("Pulse 3 para dividir ");
+			System.out.println("Pulse 4 para multiplicar");
+			System.out.println("Pulse 0 para salir del programa");
+			respuesta = Leer.datoInt();
+
+			switch (respuesta) {
+			case 1:
+				// suma
+				System.out.println("Usted ha elegido suma ");
+				System.out.println("A continuación diga cuantos numeros desea sumar");
+				tope = Leer.datoInt();
+				for (int i = 0; i < tope; i++) {
+					System.out.println("Diga el número " + (i + 1) + " que desea sumar");
+					leer = Leer.datoDouble();
+					resul += leer;
+					parOimpar = leer % dos;
+				}
+				// par impar
+				if (parOimpar == 0) {
+					System.out.println("EL número es par");
+
+				} else {
+					System.out.println("El número es impar");
+				}
+				System.out.printf("La suma final de todos los números es: %.2f \n", leer);
+
+				break;
+			case 2:
+				break;
+			case 3:
+				break;
+			case 4:
+				break;
+			default:
+				break;
+			}
+
+		} while (respuesta != 0);
+
+	}
+
+}

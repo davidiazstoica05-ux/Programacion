@@ -1,0 +1,26 @@
+package ejercicio16;
+
+import java.util.Iterator;
+
+import utilidades.Leer;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int tope=10;
+		double numero; 
+		double suma=0;
+		double producto=1;
+		
+		for (int i = 0; i < tope; i++) {
+			System.out.println("Diga el número " +(i+1)+ " que desea introducir");
+			numero=Leer.datoDouble();
+			suma+=numero; //esto es igual que suma= suma+numero;
+			producto*=numero; //esto es igual que producto= producto*numero;
+		}
+		System.out.println("La suma de todos los números es: "+suma);
+		System.out.println("El producto de todos los números es: "+producto);
+	}
+
+}
