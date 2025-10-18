@@ -17,11 +17,14 @@ public class Principal {
 		
 		System.out.println("Bienvenido, este programa multiplicará por 2 el número introducido");
 		System.out.println("durante 10 veces");
-		for (int i = 0; i < numeros.length; i++) {
-			
-			System.out.println("Diga el número "+ (i+1));
-			respuesta=Leer.datoInt();
-			numeros[i]=respuesta*dos;
+		
+		//Hacer el bucle
+		for (int i = 0; i < numeros.length; i++) {	
+			System.out.println("\nDiga el número "+ (i+1));
+			//debo de meter una var extra, para poder guardar el numero en algún lao 
+			//antes de hacer la multiplicacion. 
+			numeros[i]=Leer.datoInt();
+			numeros[i]*=dos;
 			System.out.println("Si lo multiplicamos por dos es "+numeros[i]);
 			
 		}
