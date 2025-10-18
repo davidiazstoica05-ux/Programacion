@@ -1,3 +1,2 @@
-2025/10/17-12:14:28.333 bac Reusing MANIFEST C:\Users\david\Programacion\eclipse-workspace\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Site Characteristics Database/MANIFEST-000001
-2025/10/17-12:14:28.333 bac Recovering log #3
-2025/10/17-12:14:28.334 bac Reusing old log C:\Users\david\Programacion\eclipse-workspace\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Site Characteristics Database/000003.log 
+2025/10/18-10:59:13.950 4c70 Creating DB C:\Users\david\Programacion\eclipse-workspace\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Site Characteristics Database since it was missing.
+2025/10/18-10:59:13.957 4c70 Reusing MANIFEST C:\Users\david\Programacion\eclipse-workspace\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Site Characteristics Database/MANIFEST-000001
