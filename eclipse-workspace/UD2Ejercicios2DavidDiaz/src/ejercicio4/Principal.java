@@ -25,10 +25,12 @@ public class Principal {
 		for (int i = 0; i < numeros.length; i++) {
 			
 			int numeroAleatorio = num.nextInt(100);
-				System.out.println("Números aleatorio entre el 0 y el 99:"+numeroAleatorio);
+				System.out.println("Números aleatorio entre el 0 y el 99");
+				System.out.println("El número " + (i+1) + " generado es: "+numeroAleatorio);
 				System.out.println("Hay diez huecos disponibles, ¿Donde desea guardarlo?");
-				numeros[i]=Leer.datoInt();
-				System.out.println("Número guardado en el hueco: "+ numeros[i]);
+				numeros[i]=Leer.datoInt();		
+				}
+				
 			
 			
 			
