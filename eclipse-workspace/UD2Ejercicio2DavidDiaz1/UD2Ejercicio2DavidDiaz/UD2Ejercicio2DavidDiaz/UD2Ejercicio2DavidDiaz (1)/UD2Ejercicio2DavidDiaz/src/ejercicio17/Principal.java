@@ -21,7 +21,7 @@ public class Principal {
             suma += nota;
 
             if (nota < 5) {
-                suspensos++;
+                suspensos+=suspensos;
             }
         }
 

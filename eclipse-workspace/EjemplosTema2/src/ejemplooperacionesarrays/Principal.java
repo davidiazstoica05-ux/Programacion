@@ -29,7 +29,7 @@ public class Principal {
 			System.out.println("Valor: " + edades[i]);
 
 		}
-		// para poner una condicion (En este caso para los 18 a 0)
+		// para poner una condicion (En este caso para los 18 lo pasamos a 0)
 		for (int i = 0; i < edades.length; i++) {
 			if (edades[i] == 18) {
 				edades[i] = 0;
@@ -44,6 +44,7 @@ public class Principal {
 		}
 
 		// mostrar el valor que el usuario quiera
+		//primero leemos
 		System.out.println("Que valor quiere sacar");
 		leido = Leer.datoInt();
 		
@@ -57,9 +58,11 @@ public class Principal {
 			suma += edades[i];// suma=suma+edades[i];
 
 		}
+		//media
 		System.out.println("La suma vale= " + suma);
+		//casteamos por que hay una div de enteros
 		media=(double)suma/edades.length;
-		System.out.printf("\n La media vale: %.2f",media);
+		System.out.printf("\nLa media vale: %.2f",media);
 	}
 
 }
