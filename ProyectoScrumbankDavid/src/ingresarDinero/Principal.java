@@ -9,7 +9,7 @@ public class Principal {
 		//Ingresar dinero 
 		int ingresarS;
 		double saldoN;
-	
+		System.out.println("Cuanto dinero desea ingresar");
 		ingresarS=Leer.datoInt();
 		
 		saldoN=ingresarS+saldo;
