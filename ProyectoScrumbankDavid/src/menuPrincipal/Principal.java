@@ -16,7 +16,7 @@ public class Principal {
 			System.out.println("Pulse 2 para sacar dinero");
 			System.out.println("Pulse 3 para consultar saldo");
 			System.out.println("Pulse 4 para consultar facturas");
-			System.out.println("Pulse 5 para un prestamo");
+			System.out.println("Pulse 5 para un préstamo");
 			System.out.println("Pulse 6 para comprar artículos");
 			System.out.println("Pulse 7 para contratar una hipoteca");
 			System.out.println("Pulse 8 para contratar una tarjeta");
