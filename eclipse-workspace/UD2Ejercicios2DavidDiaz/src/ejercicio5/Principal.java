@@ -93,6 +93,7 @@ public class Principal {
 		} 
 		media=(double)suma/numeros.length;
 		System.out.printf("\nLa media de la suma es: %.2f",media);
+		System.out.println("\nGracias por usar nuestro programa");
 
 	}
 
