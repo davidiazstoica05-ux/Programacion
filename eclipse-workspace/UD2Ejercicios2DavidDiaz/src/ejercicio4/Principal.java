@@ -15,21 +15,23 @@ public class Principal {
 		 * por teclado. También se debe mostrar la suma de todos y la media
 		 */
 
+		//quitar el for y mostrar la lista despues de rellenar y arreglar el contador
+		
 		int tam = 10;
 		int[] numeros = new int[tam];
 		Random rnd = new Random(System.nanoTime());
-		int numeroRandom, guardar;
+		int numeroRandom, guardar, cont = 0, elemento;
 		double suma = 0, media = 0;
-		
-		
-		
-		System.out.println("Bienvenido a un generado de números aleatorios entre el 1 y el 99, ademas podrás guardar el número en la posicion que desee");
+
+		System.out.println(
+				"Bienvenido a un generado de números aleatorios entre el 1 y el 99, ademas podrás guardar el número en la posicion que desee");
 		// generar los numeros guardado
 		for (int i = 0; i < numeros.length; i++) {
 			numeroRandom = rnd.nextInt(100);
 			System.out.println("Número " + (i + 1) + " generado\nNúmero: " + numeroRandom);
 			System.out.println("¿Donde deseas guardar el número?");
 			System.out.println("Estado actual del array: ");
+
 			// for dentro del for para generar la lista
 			for (int j = 0; j < numeros.length; j++) {
 				System.out.println("Hueco número= " + (j + 1) + " " + numeros[j]);
@@ -39,7 +41,26 @@ public class Principal {
 			numeros[guardar - 1] = numeroRandom;
 			System.out.println("");
 
-		} // for para hacer la suma
+		}
+		// con esto pedimos cual elemento quiere buscar
+		System.out.println("Que elemento desea buscar: ");
+		elemento = Leer.datoInt();
+
+		// Con esto hacemos un bucle para buscarlo y saber cuantas veces esta
+		for (int i = 0; i < numeros.length; i++) {
+			if (numeros[i] == elemento) {
+				cont++;
+				System.out.println("Hay " + cont + " número/s iguales y está en la posicion: "+i);
+
+			}
+
+		}//if fuera del for para que cuando el if de dentro no funcione, funcione este
+		if (cont == 00) {
+			System.out.println("\nNo hay números iguales");
+
+		}
+
+		// for para hacer la suma
 		for (int i = 0; i < numeros.length; i++) {
 			suma += numeros[i];
 
@@ -48,7 +69,7 @@ public class Principal {
 
 		// hago la media, uso el .length para que sea entre el tam del array
 		media = suma / numeros.length;
-		System.out.printf("La media de todos los números es: %.2f",media);
+		System.out.printf("\nLa media de todos los números es: %.2f", media);
 		System.out.println("\nGracias por usar nuestro programa");
 	}
 

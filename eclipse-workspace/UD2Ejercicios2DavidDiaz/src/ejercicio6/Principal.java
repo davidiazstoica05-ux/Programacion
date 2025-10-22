@@ -1,5 +1,7 @@
 package ejercicio6;
 
+import utilidades.Leer;
+
 public class Principal {
 
 	public static void main(String[] args) {
@@ -12,15 +14,31 @@ public class Principal {
 		 */
 
 		double aleatorios, desde = 0, hasta = 5;
-		String[] meses = { "Enero", "Febrero", "Marzo", "Mayo" };
-		int tam = 4;
+		String[] meses;
+		int tam ;
 		double[] numerosA;
+		
+		
+		
+		
+		System.out.println("Bienvenido, este programa enseña lista de meses y de números\n\n");
+		System.out.println("Diga el tamaño del tamaño de los números aleatorios que quiere generar\n");
+		tam=Leer.datoInt();
 		numerosA = new double[tam];
-
-		System.out.println("Bienvenido, este programa enseña lista de meses y de números");
+		
+		System.out.println("Diga cuantos meses son");
+		tam=Leer.datoInt();
+		meses= new String [tam];
+		
+		for (int i = 0; i < meses.length; i++) {
+			System.out.println("Nombre del mes "+(i+1));
+			meses[i]=Leer.dato();
+		
+		}
+		
 		// Con este for imprimo los meses que hay en el array ya inicializado
 		for (int i = 0; i < meses.length; i++) {
-			System.out.printf("%s, ", meses[i]);
+			System.out.printf("%s\t\t", meses[i]);
 
 		}
 		System.out.println("");
@@ -29,10 +47,19 @@ public class Principal {
 			// formúla desde-hasta en double
 			aleatorios = Math.random() * (desde - hasta) + hasta;
 			numerosA[i] = aleatorios;
-			System.out.printf("%.3f, ", numerosA[i]);
 			
-		} System.out.println("Gracias por usar nuestro programa");
-
+			
+		} 
+		
+		//Con este imprimo 
+		for (int i = 0; i < numerosA.length; i++) 
+			System.out.printf("%.3f\t\t", numerosA[i]);
+		
+		System.out.println("\n\n\nGracias por usar nuestro programa");
+		
+		
+		
+		//Se puede hacer con un if dentro del for 
 	}
 
 }
