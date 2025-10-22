@@ -36,7 +36,7 @@ public class Principal {
 				System.out.println("Programa terminado");
 				break;
 			case 1:
-				System.out.printf("Su saldo es de %.2f\n€", saldo);
+				System.out.printf("Su saldo es de %.2f€\n", saldo);
 				break;
 			case 2:
 				System.out.println("¿Cuanto dinero desea retirar?");

@@ -36,7 +36,7 @@ public class Principal {
 		
 		}
 		
-		// Con este for imprimo los meses que hay en el array ya inicializado
+		// Con este for imprimo los meses que hay en el array 
 		for (int i = 0; i < meses.length; i++) {
 			System.out.printf("%s\t\t", meses[i]);
 

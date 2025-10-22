@@ -30,18 +30,17 @@ public class Principal {
 			numeroRandom = rnd.nextInt(100);
 			System.out.println("Número " + (i + 1) + " generado\nNúmero: " + numeroRandom);
 			System.out.println("¿Donde deseas guardar el número?");
-			System.out.println("Estado actual del array: ");
-
-			// for dentro del for para generar la lista
-			for (int j = 0; j < numeros.length; j++) {
-				System.out.println("Hueco número= " + (j + 1) + " " + numeros[j]);
-			}
-			System.out.println("");
 			guardar = Leer.datoInt();
 			numeros[guardar - 1] = numeroRandom;
 			System.out.println("");
 
 		}
+		System.out.println("Estado del array ");
+		//para mostrar la lista
+		for (int i = 0; i < numeros.length; i++) {
+			System.out.println("Posicion "+(i+1)+": "+numeros[i]);
+		}
+		
 		// con esto pedimos cual elemento quiere buscar
 		System.out.println("Que elemento desea buscar: ");
 		elemento = Leer.datoInt();
