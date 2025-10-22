@@ -50,7 +50,7 @@ public class Principal {
 		for (int i = 0; i < numeros.length; i++) {
 			if (numeros[i] == elemento) {
 				cont++;
-				System.out.println("Hay " + cont + " número/s iguales y está en la posicion: "+i);
+				System.out.println("\nHay " + cont + " número/s iguales y está en la posicion: "+i);
 
 			}
 
