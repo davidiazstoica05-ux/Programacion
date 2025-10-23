@@ -93,7 +93,7 @@ public class Principal {
 				System.out.println("\nResumen de la compra");
 				System.out.println("Productos: "+cantProd);
 				System.out.println("Productos caros: "+contCaro);
-				System.out.printf("Precio medio: %.2f€",media);
+				
 				
 				break;
 
