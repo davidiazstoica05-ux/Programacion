@@ -9,7 +9,7 @@ public class Principal {
 
 		
 		double nota,suma=0,media;
-        int suspensos=0;
+        int suspensos=0,uno=1;
         int numAsignaturas = 6;
         
         System.out.println("Bienvenido, este prorama le ayudara a saber el número de suspensos y la media total");
@@ -21,13 +21,13 @@ public class Principal {
             suma += nota;
 
             if (nota < 5) {
-                suspensos+=suspensos;
+                suspensos+=uno;
             }
         }
 
          media = suma / numAsignaturas;
 
-        System.out.println("\nLa nota media es: " + media);
-        System.out.println("Número de suspensos: " + suspensos);
+        System.out.printf("\nLa nota media es: %.2f",media);
+        System.out.println("\nNúmero de suspensos: " + suspensos);
     }
 }

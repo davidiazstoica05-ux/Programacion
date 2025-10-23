@@ -57,7 +57,7 @@ public class Principal {
 				if (saldo < totalEntradas) {
 					System.out.println("\nNo tiene suficiente dinero en la cuenta");
 				} else {
-					saldo = saldo - entradas;
+					saldo = saldo - totalEntradas;
 					System.out.println("\nGracias por su compra ");
 				}
 				break;

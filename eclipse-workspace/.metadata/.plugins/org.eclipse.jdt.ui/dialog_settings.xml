@@ -16,9 +16,9 @@
 	<section name="JavaProjectWizard.dialogBounds">
 		<item key="DIALOG_X_ORIGIN" value="214"/>
 		<item key="DIALOG_Y_ORIGIN" value="7"/>
-		<item key="DIALOG_WIDTH" value="742"/>
-		<item key="DIALOG_HEIGHT" value="801"/>
-		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		<item key="DIALOG_WIDTH" value="746"/>
+		<item key="DIALOG_HEIGHT" value="799"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 	</section>
 	<section name="JavaElementSearchActions">
 	</section>
@@ -27,7 +27,7 @@
 		<item key="DIALOG_Y_ORIGIN" value="234"/>
 		<item key="DIALOG_WIDTH" value="525"/>
 		<item key="DIALOG_HEIGHT" value="500"/>
-		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 	</section>
 	<section name="NewPackageWizardPage">
 		<item key="create_package_info_java" value="false"/>
@@ -35,9 +35,9 @@
 	<section name="NewClassCreationWizard.dialogBounds">
 		<item key="DIALOG_X_ORIGIN" value="385"/>
 		<item key="DIALOG_Y_ORIGIN" value="84"/>
-		<item key="DIALOG_WIDTH" value="571"/>
-		<item key="DIALOG_HEIGHT" value="656"/>
-		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		<item key="DIALOG_WIDTH" value="574"/>
+		<item key="DIALOG_HEIGHT" value="659"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 	</section>
 	<section name="OptionalMessageDialog.hide.">
 		<item key="org.eclipse.jdt.ui.typecomment.deprecated" value="true"/>
@@ -62,5 +62,12 @@
 		<item key="DIALOG_WIDTH" value="579"/>
 		<item key="DIALOG_HEIGHT" value="543"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+	<section name="org.eclipse.jdt.internal.ui.text.QuickOutline">
+		<item key="GoIntoTopLevelTypeAction.isChecked" value="false"/>
+		<item key="org.eclipse.jdt.internal.ui.text.JavaOutlineInformationControlDIALOG_WIDTH" value="600"/>
+		<item key="org.eclipse.jdt.internal.ui.text.JavaOutlineInformationControlDIALOG_HEIGHT" value="480"/>
+		<item key="org.eclipse.jdt.internal.ui.text.JavaOutlineInformationControlDIALOG_USE_PERSISTED_SIZE" value="true"/>
+		<item key="org.eclipse.jdt.internal.ui.text.JavaOutlineInformationControlDIALOG_USE_PERSISTED_LOCATION" value="false"/>
 	</section>
 </section>

@@ -19,7 +19,7 @@ public class Principal {
 		double prcSala1 = 5.6, prcSala2 = 8.1, prcSala3 = 7.2, prcSala4 = 6.5;
 		double total1, total2, total3, total4;
 
-		System.out.println("Hola, con este programa podrá elejir la sala donde ver la película");
+		System.out.println("Hola, con este programa podrá elegir la sala donde ver la película");
 		System.out.println("Diga el número de entradas que desea");
 		entradas = Leer.datoInt();
 		System.out.printf("Sala 1: \n%S, precio %.2f \nPulse 1 para elejir esta sala ", normal, prcSala1);

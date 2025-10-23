@@ -19,7 +19,7 @@ public class Principal {
 		retirada=Leer.datoDouble();
 		nuevoSaldo=cantDinero-retirada;
 		
-		if (retirada<cantDinero) {
+		if (retirada<=cantDinero) {
 			System.out.println("Puede retirar el dinero");
 			System.out.printf("Saldo restante %.2f€",nuevoSaldo);			
 		}else System.out.println("No dispone de suficiente saldo");

@@ -31,7 +31,7 @@ public class Principal {
 			totalDes=totalEntradas-des;
 			System.out.printf("El total es de %.2f, aplicandole el descuento del %.2f ",totalEntradas,descuento);
 			System.out.printf("\nEL total sería %.2f€ ",totalDes);
-		}else if (miercoles.equals(miercoles2)) {
+		}else if (diaSemana.equals(miercoles2)) {
 			System.out.println("Diga el porcentaje de descuento");
 			descuento=Leer.datoDouble();
 			des=totalEntradas*descuento/den;

@@ -23,7 +23,7 @@ public class Principal {
 				producto = i * factor1;
 				System.out.printf("\n%d*%d=%d", factor1, i, producto);
 			}
-			System.out.println(" ¿Quieres hacer otra multiplicación? (s/n)");
+			System.out.println(" \n¿Quieres hacer otra multiplicación? (s/n)");
 			opcion = Leer.datoChar();
 		}
 

@@ -1,7 +1,5 @@
 package ejercicio16;
 
-
-
 import utilidades.Leer;
 
 public class Principal {

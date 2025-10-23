@@ -4,6 +4,7 @@
     <fullyQualifiedTypeName name="java.nio.file.spi.FileSystemProvider"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
-    <fullyQualifiedTypeName name="utilidades.Leer"/>
     <fullyQualifiedTypeName name="java.net.MulticastSocket"/>
+    <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthOptionPaneUI"/>
+    <fullyQualifiedTypeName name="utilidades.Leer"/>
 </qualifiedTypeNameHistroy>
