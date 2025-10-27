@@ -72,7 +72,7 @@ public class Principal {
 		System.out.println("El número elegido es: " + numeros[opcion - 1]);
 		System.out.println("¿Qué nuevo número desea introducir?");
 		nuevo = Leer.datoInt();
-		numeros[opcion - 1] = nuevo;
+		numeros[opcion - 1] = nuevo;     
 
 		System.out.println("El nuevo número es: " + numeros[opcion - 1]);
 
