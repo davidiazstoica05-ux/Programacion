@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
     <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-        <listEntry value="/EjercicioPruebaExamen/src/ejerciciofinalfina/Principal.java"/>
+        <listEntry value="/EjemplosTema2/src/ejemplowhile/Principal.java"/>
     </listAttribute>
     <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
         <listEntry value="1"/>
     </listAttribute>
     <booleanAttribute key="org.eclipse.jdt.launching.ATTR_EXCLUDE_TEST_CODE" value="true"/>
-    <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="ejerciciofinalfina.Principal"/>
-    <stringAttribute key="org.eclipse.jdt.launching.MODULE_NAME" value="EjercicioPruebaExamen"/>
-    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="EjercicioPruebaExamen"/>
+    <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="ejemplowhile.Principal"/>
+    <stringAttribute key="org.eclipse.jdt.launching.MODULE_NAME" value="EjemplosTema2"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="EjemplosTema2"/>
 </launchConfiguration>
