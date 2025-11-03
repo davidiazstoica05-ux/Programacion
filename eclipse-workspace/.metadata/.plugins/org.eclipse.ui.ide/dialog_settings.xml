@@ -35,6 +35,7 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\diaz.stdav24_triana\Programacion"/>
 			<item value="C:\Users\diaz.stdav24_triana\Programacion\eclipse-workspace\UD1Ejercicios3DavidDiaz"/>
 			<item value="C:\Users\diaz.stdav24_triana\Programacion\eclipse-workspace\LecturaTeclado"/>
 			<item value="C:\Users\diaz.stdav24_triana\Programacion\eclipse-workspace\EjemplosTema2"/>
