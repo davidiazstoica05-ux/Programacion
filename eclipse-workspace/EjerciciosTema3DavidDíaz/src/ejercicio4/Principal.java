@@ -16,7 +16,7 @@ public class Principal {
 		altura = Leer.datoDouble();
 		Cilindro cili = new Cilindro();
 		System.out.printf("El volumen del cilindro es: %.2f ", cili.calcularVolumen(altura, radio)); //Tener cuidado con el orden en el que se colocan los parámetros
-		System.out.println("Gracias por usar nuestro programa");
+		System.out.println("\nGracias por usar nuestro programa");
 
 	}
 

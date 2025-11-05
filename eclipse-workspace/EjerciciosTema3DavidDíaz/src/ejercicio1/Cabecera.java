@@ -28,6 +28,47 @@ public class Cabecera {
 		this.aula = aula;
 
 	}
+	// Getter and set
+	
+	//Get asignatura
+	public String getNombreAsignatura() {
+
+		return this.nombreAsignatura;
+	}
+	//set asignatura
+
+	public void setnombreAsignatura(String nombreAsignatura) {
+
+		this.nombreAsignatura = nombreAsignatura;
+
+	}
+	//get aula
+	
+	public String getAula() {
+		
+		return this.aula;
+	}
+	
+	//set aula
+	public void setAula(String aula) {
+
+		this.aula = aula;
+
+	}
+	//get fecha
+	
+	public String getfecha() {
+		
+		return this.fecha;
+	}
+	
+	//set fecha
+	public void setfecha(String fecha) {
+
+		this.fecha = fecha;
+
+	}
+	
 
 	// método
 	// Como tengo los valores como atributos no los tengo que pasar

@@ -21,7 +21,7 @@ public class Principal {
 		Cabecera c3 = new Cabecera();
 
 		// 2.Leyendo datos por teclado
-		// OJO:SE declaran arriba al prinvipio y se instnacian después
+		// OJO:SE declaran arriba al principio y se instnacian después
 		// de leer los datos.
 
 		System.out.println("Diga la fecha de hoy");
