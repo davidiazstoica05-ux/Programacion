@@ -2,6 +2,7 @@ package ejercicios3;
 
 public class Operaciones {
 	
+	//Constructores 
 	//Número parOimpar
 
 	public int division(int num1) {
