@@ -9,14 +9,15 @@ public class Principal {
 		
 		String frase;
 		int veces;
-		Copiado co=new Copiado();
+		
 		
 		System.out.println("Diga la frase que desea copiar");
 		frase=Leer.dato();
 		System.out.println("Diga las veces que va a ser copiado");
 		veces=Leer.datoInt();
+		Copiado co=new Copiado(frase,veces);
 		
-		co.copiar(frase, veces);
+		co.copiar();
 		
 		
 		
