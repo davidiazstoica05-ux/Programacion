@@ -17,10 +17,10 @@ public class Operaciones {
 		} else if (resul == cero && num1 >= cero) {
 			System.out.println("Es par y positivo");
 
-		} else if (resul != 0 && num1 < cero) {
+		} else if (resul != cero && num1 < cero) {
 			System.out.println("Es impar y negativo");
 
-		} else if (resul != 0 && num1 >= cero) {
+		} else if (resul != cero && num1 >= cero) {
 			System.out.println("Es impar y positivo");
 		}
 		return resul;

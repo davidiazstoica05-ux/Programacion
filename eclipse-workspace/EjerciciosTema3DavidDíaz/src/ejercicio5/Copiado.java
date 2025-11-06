@@ -2,11 +2,16 @@ package ejercicio5;
 
 public class Copiado {
 
-	// public int duplicar (int veces) {
-
-	// return veces;
-	// }
-
+	private String frase; 
+	private String veces;
+	
+	
+	public Copiado () {
+		
+		
+		
+	}
+	
 	public void copiar(String frase, int veces) {
 
 		for (int i = 0; i < veces; i++) {
