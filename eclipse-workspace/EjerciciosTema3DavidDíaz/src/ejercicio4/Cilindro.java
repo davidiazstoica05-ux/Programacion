@@ -4,7 +4,7 @@ public class Cilindro {
 	
 	private double radio,altura;
 	
-	//constructos
+	//constructor
 	public Cilindro (double radio, double altura) {
 		
 		this.radio=radio;
