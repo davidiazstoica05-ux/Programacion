@@ -4,6 +4,7 @@ public class Cilindro {
 	
 	private double radio,altura;
 	
+	//constructos
 	public Cilindro (double radio, double altura) {
 		
 		this.radio=radio;
@@ -11,7 +12,17 @@ public class Cilindro {
 		
 	}
 	
-
+	//setRadio
+	public void setRadio (double radio) {
+		this.radio=radio;
+		
+	}
+	
+	//setAltura
+	public void setAltura (double altura) {
+		this.altura=altura;
+		
+	}
 	// Calcular volumen
 	public double calcularVolumen() {
 

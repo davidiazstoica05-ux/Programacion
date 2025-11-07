@@ -4,10 +4,13 @@ public class Operaciones {
 
 	// Número parOimpar
 
+
+	
 	public int operar(int num1) {
 
 		int cero = 0, num2 = 2, resul;
-
+		
+		
 		resul = num1 % num2;
 
 		if (resul == cero && num1 < cero) {

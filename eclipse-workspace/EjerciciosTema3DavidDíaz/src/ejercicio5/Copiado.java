@@ -3,16 +3,17 @@ package ejercicio5;
 public class Copiado {
 
 	private String frase; 
-	private String veces;
+	private int veces;
 	
 	
-	public Copiado () {
+	public Copiado (String frases, int veces) {
 		
-		
+		this.frase=frases;
+		this.veces=veces;
 		
 	}
 	
-	public void copiar(String frase, int veces) {
+	public void copiar() {
 
 		for (int i = 0; i < veces; i++) {
 
