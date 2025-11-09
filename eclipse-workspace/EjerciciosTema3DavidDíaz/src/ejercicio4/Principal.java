@@ -10,7 +10,6 @@ public class Principal {
 			double radio,altura;
 			Cilindro c1;
 		
-			System.out.printf("El volumen del cilindro es: %.2f ", c1.calcularVolumen());
 		
 		
 			System.out.println("\nDiga el radio del cilindro 1 ");

@@ -14,9 +14,7 @@ public class Principal {
 
 		System.out.println("Diga el nombre del titular de la cuenta");
 		nombreTitular = Leer.dato();
-		System.out.println("Diga el saldo de su cuenta");
-		saldo = Leer.datoDouble();
-		cc = new CuentaCorriente(saldo, nombreTitular);
+		cc = new CuentaCorriente( nombreTitular);
 
 		do {
 			System.out.println("Pulse 1 para ingresar dinero");
@@ -35,7 +33,14 @@ public class Principal {
 			case 2:
 				System.out.println("¿Cúanto dinero desea retirar?");
 				retirar = Leer.datoInt();
-				System.out.println("Retirada exitosa. \nNuevo saldo: " + cc.retirar(retirar) + "€");
+				cc.retirar(retirar);
+				if (cc.retirar(retirar)) {
+					System.out.println("Retirada exitosa");
+					cc.consultar();
+				}else {
+					System.out.println("Error, saldo insuficiente");
+					cc.consultar();
+				}
 				break;
 			case 3:
 				
