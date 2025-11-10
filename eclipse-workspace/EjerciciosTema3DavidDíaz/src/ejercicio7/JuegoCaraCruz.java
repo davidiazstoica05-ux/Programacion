@@ -37,15 +37,30 @@ public class JuegoCaraCruz {
 		return numA;
 	}
 	
+	//comprobar
 	public boolean comprobar( int numA, int opcion) {
 		if (numA==opcion) {
-			System.out.println("Enhorabuena ha ganado.");
+			
 			return true;
 			
 		}else {
-			System.out.println("Siga jugando");
+			
 			return false;
 		}
+	}
+	
+	//Moistrar
+	public void mostrar(int numA, int opcion) {
+		
+		if (comprobar(numA, opcion)==true) {
+			System.out.println("Enhorabuena ha ganado.");
+		}else if (comprobar(numA, opcion)==false) {
+			System.out.println("Siga jugando");
+		}
+		
+		
+		
+		
 	}
 	
 	

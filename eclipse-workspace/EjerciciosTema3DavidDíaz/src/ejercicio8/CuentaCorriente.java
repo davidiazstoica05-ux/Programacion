@@ -1,7 +1,5 @@
 package ejercicio8;
 
-import utilidades.Leer;
-
 public class CuentaCorriente {
 	
 	
@@ -10,17 +8,28 @@ public class CuentaCorriente {
 	private double saldo;
 	private String nombreTitular;
 	
-	//constructor
+	//Constructor
 	public CuentaCorriente(String nombreTitular) {
-		this.saldo=0.0;
+		this.saldo=1000.0;
 		this.nombreTitular=nombreTitular;
 	}
+	//Constructor Vacío, el que no tiene nada entre los paréntesis
+	public CuentaCorriente() {
 		
-	//ingresar
+	}
+	//Constructor Todos
+	public CuentaCorriente(double saldo, String nombreTitular) {
+		this.saldo=saldo;
+		this.nombreTitular=nombreTitular;
+	}
+	
+	//Ingresar
 	public double ingresar (int ingreso) {
-		
+		//saldo=saldo+ingreso;
 		saldo+=ingreso;
 		
+		//Si no devuelvo nada el saldo igualmente se actualiza
+		//En caso de duda, hago las dos cosas
 		return saldo;
 	}
 	//retirar
@@ -29,10 +38,23 @@ public class CuentaCorriente {
 		return false;
 		
 	} else {
+		//saldo=saldo-retirar;
 		saldo-=retirar;		
 		return true;	
 	}
+}
 		
+	//mostrarMensaje
+	public void mostrarMensaje (boolean b) {
+		if (b) {
+			System.out.println("Operación exitosa");
+		} else {
+			System.out.println("Saldo insuficiente");
+
+		}
+		
+	
+	
 	}
 	//Consultar
 	public void consultar () {
