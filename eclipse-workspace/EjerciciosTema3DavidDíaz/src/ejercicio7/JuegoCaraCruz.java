@@ -52,9 +52,9 @@ public class JuegoCaraCruz {
 	//Moistrar
 	public void mostrar(int numA, int opcion) {
 		
-		if (comprobar(numA, opcion)==true) {
+		if (comprobar(numA, opcion)) {
 			System.out.println("Enhorabuena ha ganado.");
-		}else if (comprobar(numA, opcion)==false) {
+		}else if (comprobar(numA, opcion)) {
 			System.out.println("Siga jugando");
 		}
 		
