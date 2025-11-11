@@ -4,37 +4,36 @@ import java.util.Random;
 
 public class Generadora {
 
-	private Random rand = new Random();
+	
 
-	public Generadora() {
-
-	}
 
 	// Quiniela;
 	// generarquiniela
 	public int generarQuiniela() {
-
+		Random rand = new Random();
 		return rand.nextInt(3);
 	}
 
 	// mostrar
-	public String mostrarQuiniela(int numA) {
+	public void mostrarQuiniela(int numA) {
 		int dos = 2, uno = 1;
 		if (numA == dos) {
 
-			return "2";
+			System.out.println("2");
 
 		} else if (numA == uno) {
-			return "1";
+			System.out.println("1");
 
 		} else {
-			return "x";
+			System.out.println("x");
+			
 		}
 	}
 
 	// ParoImpar
 	// generar
 	public int generarParOImpar() {
+		Random rand = new Random();
 		return rand.nextInt(2);
 	}
 
@@ -54,15 +53,20 @@ public class Generadora {
 	// Primitiva
 	// Generar
 	public int generarPrimitiva() {
-		return rand.nextInt(49 - 1 + 1) + 1;
+		Random rand = new Random();
+		int cincuenta=49,uno=1;
+		return rand.nextInt(cincuenta - uno + uno) + uno;
 	}
 
 	// mostrar
-	public void mostrarPrimitiva(int numA) {
-		for (int i = 0; i < 6; i++) {
+	public int mostrarPrimitiva() {
+		int cincuenta=49,uno=1,numA=0,seis=6;
+		for (int i = 0; i < seis; i++) {
+			Random rand = new Random();
+			numA = rand.nextInt(cincuenta - uno + uno) + uno;
 			System.out.printf("%02d", numA);	
 		}
-			
+			return numA;
 		
 	}
 
