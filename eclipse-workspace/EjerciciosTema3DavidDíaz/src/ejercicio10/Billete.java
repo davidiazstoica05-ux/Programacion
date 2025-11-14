@@ -35,17 +35,11 @@ public class Billete {
 		this.precio = precio;
 	}
 
-	public int getNumPersona() {
-		return numPersona;
-	}
 
 	public void setNumPersona(int numPersona) {
 		this.numPersona = numPersona;
 	}
 
-	public int getSaltos() {
-		return saltos;
-	}
 
 	public void setSaltos(int saltos) {
 		this.saltos = saltos;
