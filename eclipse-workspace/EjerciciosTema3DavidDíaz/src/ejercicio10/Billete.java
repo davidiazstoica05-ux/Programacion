@@ -26,7 +26,7 @@ public class Billete {
 	 * debe tener el método comprobar contraseña.
 	 */
 
-	private double precio;1
+	private double precio;
 	private int saltos;
 	private String hora;
 
