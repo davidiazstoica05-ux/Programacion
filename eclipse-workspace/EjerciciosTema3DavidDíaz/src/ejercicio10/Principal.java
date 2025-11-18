@@ -20,6 +20,7 @@ public class Principal {
 			System.out.println("Pulse 0 para salir");
 			opcion=Leer.datoInt();
 			switch (opcion) {
+			
 			//Comprar ticket
 			case 1:
 				System.out.println("¿Cuántas personas?");
