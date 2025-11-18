@@ -20,9 +20,6 @@ public class Maquina {
 
 	}
 
-
-
-
 	public double getSaldo() {
 		return saldo;
 	}
@@ -46,9 +43,15 @@ public class Maquina {
 		return "Maquina [saldo=" + saldo + ", b=" + b + ", passw=" + passw + "]";
 	}
 	
+	//Precio total del billete
 	public double pagarPersona(int numPers) {		 
 		 return numPers*b.getPrecio()*b.getSaltos();
 	}
 	
+	//Cambio del billete 
+	public double devolverDinero (double introducirDinero, double pagarPP) {
+		
+		return pagarPP-introducirDinero;
+	}
 	
 }

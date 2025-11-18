@@ -82,15 +82,4 @@ public class Billete {
 				+ "]";
 	}
 
-	
-	
-	public void imptimirBillete() {
-		
-		System.out.println("\t*****Metro Sevilla*****");
-		System.out.printf("\t\tFecha: %s",fecha);
-		System.out.printf("\nSaltos: %d",saltos);
-		System.out.printf("\nPrecio: %.2f",precio);
-		System.out.println("\n***************************");
-	}
-	
 }
