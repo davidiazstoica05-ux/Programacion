@@ -25,6 +25,7 @@ public class Principal {
 				numPers=Leer.datoInt();
 				System.out.println("Saltos");
 				saltos=Leer.datoInt();
+				b.setSaltos(saltos);
 				System.out.println(m.pagarPersona(numPers));
 				System.out.println("Cambio");
 				
