@@ -28,18 +28,26 @@ public class Billete {
 
 	private double precio;
 	private int saltos;
-	private String hora;
+	private String fecha;
 
-	public Billete(double precio, int saltos, String hora) {
+	public Billete(double precio, int saltos, String fecha) {
 
 		this.precio = precio;
 		this.saltos = saltos;
-		this.hora = hora;
+		this.fecha = fecha;
 
 	}
 
 	public Billete() {
+		
+		
+	}
+	
 
+	public Billete(double precio,String fecha) {
+		super();
+		this.precio = precio;
+		this.fecha=fecha;
 	}
 
 	public double getPrecio() {
@@ -52,21 +60,25 @@ public class Billete {
 
 	
 
+	public int getSaltos() {
+		return saltos;
+	}
+
 	public void setSaltos(int saltos) {
 		this.saltos = saltos;
 	}
 
-	public String getHora() {
-		return hora;
+	public String getFecha() {
+		return fecha;
 	}
 
-	public void setHora(String hora) {
-		this.hora = hora;
+	public void setFecha(String fecha) {
+		this.fecha = fecha;
 	}
 
 	@Override
 	public String toString() {
-		return "Billete [precio=" + precio + ", saltos=" + saltos + ", hora=" + hora
+		return "Billete [precio=" + precio + ", saltos=" + saltos + ", fecha=" + fecha
 				+ "]";
 	}
 
@@ -75,7 +87,7 @@ public class Billete {
 	public void imptimirBillete() {
 		
 		System.out.println("\t*****Metro Sevilla*****");
-		System.out.printf("\t\tFecha: %s",hora);
+		System.out.printf("\t\tFecha: %s",fecha);
 		System.out.printf("\nSaltos: %d",saltos);
 		System.out.printf("\nPrecio: %.2f",precio);
 		System.out.println("\n***************************");
