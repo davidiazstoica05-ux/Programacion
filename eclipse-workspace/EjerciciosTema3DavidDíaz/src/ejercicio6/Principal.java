@@ -6,14 +6,14 @@ public class Principal {
 		// TODO Auto-generated method stub
 
 		Generadora x = new Generadora();
-		int numA=0;
+		//int numA=0;
 
 		// Quiniela
 		System.out.println("Bienvenido al generador de Quinielas");
 		System.out.println("Jornada 13 ");
 		for (int i = 0; i < 10; i++) {
 			x.generarQuiniela();
-			quini=x.mostrarQuiniela(numA);
+			//quini=x.mostrarQuiniela(numA);
 			 
 			System.out.println("Partido " + (i + 1) + ": ");
 		}
