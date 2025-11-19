@@ -43,9 +43,16 @@ public class Maquina {
 		return "Maquina [saldo=" + saldo + ", b=" + b + ", passw=" + passw + "]";
 	}
 	
+	//Para que sea por salto 
+		//public double saltarBillete (){
+		
+		//double total;
+		//total=precioSalto+(numSalto*plus)
+	//}
+	
 	//Precio total del billete
 	public double pagarBillete(int numPers) {		 
-		 return numPers*b.getPrecio()*b.getSaltos();
+		 return numPers*b.getPrecio()+b.getSaltos();
 	}
 	
 	//Cambio del billete 
@@ -77,7 +84,7 @@ public class Maquina {
 		    System.out.println("* *");
 		    
 		    // Mostramos el precio total con 2 decimales
-		    System.out.printf("* PRECIO TOTAL:        %.2f€    *\n",b.getPrecio() );
+		    System.out.printf("* PRECIO TOTAL:         %.2f€    *\n",b.getPrecio() );
 		    System.out.printf("* Entregado:           %6.2f€  *\n", entregado);
 	        System.out.printf("* Cambio:              %6.2f€  *\n", cambio);
 		    
