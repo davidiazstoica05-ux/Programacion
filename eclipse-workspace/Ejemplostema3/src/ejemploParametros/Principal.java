@@ -7,13 +7,13 @@ public class Principal {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		Producto p; //declaración  
+		
 		String producto;
 		double precioB,porcentaje=0;
 		int ref,cant=0;
 		boolean refri=true;
 		LineaDeVenta lv;
-		
+		Producto p; //declaración  
 		//pido los datos antes de instanciar 
 		
 		System.out.println("Diga nombre del producto");
@@ -43,7 +43,7 @@ public class Principal {
 		//Instanciamos el objeto..
 		lv=new LineaDeVenta(p,cant);
 		System.out.printf("Subtotal: %.2f",lv.calcularPrecio(porcentaje));
-		
+	
 		
 	
 	}

@@ -81,5 +81,7 @@ public class Billete {
 		return "Billete [precio=" + precio + ", saltos=" + saltos + ", fecha=" + fecha
 				+ "]";
 	}
+	
+	
 
 }
