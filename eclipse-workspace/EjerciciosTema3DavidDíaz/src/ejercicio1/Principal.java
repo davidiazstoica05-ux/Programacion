@@ -39,7 +39,7 @@ public class Principal {
 		fecha = Leer.dato();
 		System.out.println("Diga el nombre de la asignatura");
 		nombreAsignatura = Leer.dato();
-		c5= new Cabecera ("Base de datos", "1DAM");
+		c5= new Cabecera (nombreAsignatura, "1DAM",fecha);
 		
 		//Llamada a métodos
 		c1.rellenar();
