@@ -25,6 +25,14 @@ public class GestionDeNotas {
 		this.alumn = alumn;
 	}
 
+	public String[] getMaterias() {
+		return materias;
+	}
+
+	public void setMaterias(String[] materias) {
+		this.materias = materias;
+	}
+
 	@Override
 	public String toString() {
 		return "GestionDeNotas [alumn=" + alumn + "]";
@@ -32,23 +40,16 @@ public class GestionDeNotas {
 
 	// CargarmateriasFor
 
-	public void cargarMaterias() {
-
+	public void cargarMaterias(String nombre) {
 		for (int i = 0; i < materias.length; i++) {
-			System.out.println("Diga el nombre de la materia " + (i + 1) + ":");
-			materias[i] = Leer.dato();
+
 		}
 	}
 
 	// CargarNotas
 
-	public void cargarNotas() {
+	public void cargarNotas(double nota) {
 
-		for (int i = 0; i < materias.length; i++) {
-			System.out.printf("Diga la nota de %s\n", materias[i]);
-			alumn.getNotas()[i] = Leer.datoDouble();
-
-		}
 	}
 
 	// mostrarNotas
@@ -57,20 +58,68 @@ public class GestionDeNotas {
 
 		for (int i = 0; i < materias.length && i < 10; i++) {
 
-			System.out.printf("%s", materias[i], ": %.2f\n", alumn.getNotas()[i]);
+			System.out.printf("%s: %.2f\n", materias[i], alumn.getNotas()[i]);
 
 		}
-		
-	//modificarNotas 
-		
-	public void modificar notas() {
-		
-		System.out.println("Diga ");
-		
-		
-		
-		
 	}
+
+	// mostrarNotasModificas
+	public void modificarNotas() {
+
+		int pos;
+		double nuevaNota;
+
+		System.out.println("Diga la nota que desea modificar");
+		for (int i = 0; i < materias.length; i++) {
+			System.out.printf("Pulsar %d: %s", (1 + i), materias[i]);
+
+		}
+		pos = Leer.datoInt();
+		System.out.println("Diga la nueva nota que quieres introducir");
+		nuevaNota = Leer.datoDouble();
+		// modificarLaNota
+		alumn.modificarNotas(pos, nuevaNota);
+
+		System.out.println("Notas: ");
+		mostrarNotas();
+	}
+
+	// Media
+
+	public double calcularMedia() {
+
+		double suma = 0;
+
+		for (int i = 0; i < alumn.getNotas().length; i++) {
+
+			suma += alumn.getNotas()[i];
+		}
+
+		return suma / alumn.getNotas().length;
+
+	}
+
+	// contarSuspenso
+	public int contarSuspenso() {
+
+		int cont = 0;
+		int cinco = 5;
+
+		for (int i = 0; i < alumn.getNotas().length; i++) {
+
+			if (alumn.getNotas()[i] < cinco) {
+			}
+		}
+		return cont;
+	}
+
+	// modificarNombre
+
+	public void modificarNombre(String nuevoNombre) {
+
+		for (int j = 0; j < materias.length; j++) {
+			materias[j] = nuevoNombre;
+		}
 
 	}
 
