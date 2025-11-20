@@ -10,14 +10,23 @@ public class Alumno {
 	private int suspensos;
 	private double notaMedia;
 	
-	public Alumno(String nombre, String curso, int numAsignaturas) {
+	public Alumno(String nombre, String curso, double notas[], double notaMedia, int suspensos) {
 		super();
 		this.nombre = nombre;
 		this.curso = curso;
-		this.notas = new double[numAsignaturas];
-		this.suspensos = 0;
-		this.notaMedia = 0.0;
+		this.notas = notas;
+		this.suspensos = suspensos;
+		this.notaMedia = notaMedia ;
 	}
+	
+
+	public Alumno(String nombre, String curso,double notas[]) {
+		super();
+		this.nombre = nombre;
+		this.curso = curso;
+		this.notas = notas;
+	}
+
 
 	public String getNombre() {
 		return nombre;
@@ -66,7 +75,13 @@ public class Alumno {
 	}
 	
 	
+	//modificarNota
 	
+			public void modificarNotas (int pos, double nuevaNota) {			
+				
+				notas[pos]=nuevaNota;
+			}
+
 	
 	
 	

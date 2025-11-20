@@ -20,7 +20,7 @@ public class Principal2 {
 		saltos=Leer.datoInt();
 		Billete b=new Billete(billete,saltos,fecha);
 		Maquina m=new Maquina(saldo,b,passw);
-		System.out.printf("Coste: %.2f€\n",m.);
+		//System.out.printf("Coste: %.2f€\n",m.);
 		
 	}
 
