@@ -69,7 +69,7 @@ public class Principal {
 							System.out.println("Introduzca la contraseña:");
 							passwI=Leer.datoInt();
 							if (m.comprobarContraseña(passwI)) {
-								m.setSaldo(0);
+								m.setSaldo(0);//Esto esta bien pero es mejor hacerlo en el metodo 
 								System.out.println("Saldo reseteado con exito");
 							} 
 							else {
