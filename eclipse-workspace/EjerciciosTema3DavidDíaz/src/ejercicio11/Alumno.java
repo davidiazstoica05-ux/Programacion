@@ -73,18 +73,6 @@ public class Alumno {
 	}
 
 	// modificarNota
-	public double[] introducirNotas(double nuevaNota) {
-
-		for (int i = 0; i < notas.length; i++) {
-
-			notas[i] = nuevaNota;
-		}
-
-		return notas;
-
-	}
-
-	// modificarNota
 
 	public double modificarNotas(int pos, double nuevaNota) {
 

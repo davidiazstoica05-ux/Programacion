@@ -71,7 +71,7 @@ public class GestionDeNotas {
 
 		System.out.println("Diga la nota que desea modificar");
 		for (int i = 0; i < materias.length; i++) {
-			System.out.printf("Pulsar %d: %s", (1 + i), materias[i]);
+			System.out.printf("Pulsar %d: %s Nota actual: %.2f\n", (1 + i), materias[i],alumn.getNotas()[i]);
 
 		}
 		pos = Leer.datoInt();
@@ -111,16 +111,6 @@ public class GestionDeNotas {
 			}
 		}
 		return cont;
-	}
-
-	// modificarNombre
-
-	public void modificarNombre(String nuevoNombre) {
-
-		for (int j = 0; j < materias.length; j++) {
-			materias[j] = nuevoNombre;
-		}
-
 	}
 
 }

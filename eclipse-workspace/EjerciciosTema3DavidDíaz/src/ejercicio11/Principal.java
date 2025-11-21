@@ -7,10 +7,10 @@ public class Principal {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		int opcion, tam = 0, suspensos = 0, notaMod;
-		double notas[];
+		int opcion, tam = 0, suspensos = 0, notaMod, diez = 10;
+		double notas[], notasLeer;
 		String materias[];
-		String nombre, curso, nombreMateria;
+		String nombre, curso;
 		double notaMedia, primeraNota;
 		Alumno almn;
 		GestionDeNotas gn;
@@ -27,19 +27,28 @@ public class Principal {
 		materias = new String[tam];
 		gn = new GestionDeNotas(almn, materias);
 
+		// Se puede cargar en el main
 		// Cargar nombreMaterias
 		for (int i = 0; i < materias.length; i++) {
 			System.out.println("Diga el nombre de la materia " + (i + 1) + ":");
-			nombreMateria = Leer.dato();
-			gn.modificarNombre(nombreMateria);
+			materias[i] = Leer.dato();
 		}
-		
-		//cargarNotas
-		
+
+		// cargarNotas
+
 		for (int i = 0; i < almn.getNotas().length; i++) {
 			System.out.printf("Diga la nota de %s \n", gn.getMaterias()[i]);
-			primeraNota = Leer.datoDouble();
-			almn.introducirNotas(primeraNota);
+			notasLeer = Leer.datoDouble();
+			while (notasLeer > diez) {
+				if (notasLeer < diez) {
+					notas[notasLeer];
+				}else {
+					
+					System.out.println("El número no puede ser mayor de diez");
+					notasLeer=Leer.datoDouble();					
+				}
+			}
+
 		}
 
 		do {
@@ -58,7 +67,7 @@ public class Principal {
 				gn.modificarNotas();
 				break;
 			case 3:
-
+				// Separar el set media y hacerlo en un metodo diferente
 				almn.setNotaMedia(gn.calcularMedia());
 				System.out.printf("La nota media del alumno es: %.2f", almn.getNotaMedia());
 
