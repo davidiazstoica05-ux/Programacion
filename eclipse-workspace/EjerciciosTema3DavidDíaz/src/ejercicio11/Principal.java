@@ -39,16 +39,13 @@ public class Principal {
 		for (int i = 0; i < almn.getNotas().length; i++) {
 			System.out.printf("Diga la nota de %s \n", gn.getMaterias()[i]);
 			notasLeer = Leer.datoDouble();
-			while (notasLeer > diez) {
 				if (notasLeer < diez) {
-					notas[notasLeer];
+					notas[i] = notasLeer;
 				}else {
 					
 					System.out.println("El número no puede ser mayor de diez");
 					notasLeer=Leer.datoDouble();					
 				}
-			}
-
 		}
 
 		do {
