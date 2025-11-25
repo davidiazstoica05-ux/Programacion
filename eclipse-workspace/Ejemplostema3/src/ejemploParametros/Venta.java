@@ -54,10 +54,13 @@ public class Venta {
 	}
 	
 	public double calcularMediaImpuestos () {
+		
 		double suma=0;
 		
 		
 		for (int i = 0; i < listaImpuestos.length; i++) {
+			
+			
 			
 			suma+=listaImpuestos[i];
 			

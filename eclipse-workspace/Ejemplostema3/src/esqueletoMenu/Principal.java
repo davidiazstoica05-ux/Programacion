@@ -8,7 +8,7 @@ public class Principal {
 		// TODO Auto-generated method stub
 
 		int opcion;
-		
+		do {
 		 System.out.println("Pulse 1 para ");
 		 System.out.println("Pulse 2 para ");
 		 System.out.println("Pulse 3 para ");
@@ -17,7 +17,7 @@ public class Principal {
 		 System.out.println("Pulse 6 para ");
 		 System.out.println("Pulse 7 para ");
 		opcion=Leer.datoInt();
-		 do {
+		 
 			 switch (opcion) {
 				case 1:
 					

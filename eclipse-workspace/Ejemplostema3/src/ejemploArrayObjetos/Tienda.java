@@ -51,7 +51,7 @@ public class Tienda {
 
 	// Buscar
 	// Puede devolver int o producto
-	public Producto buscarPorId(int id) {
+	/*public Producto buscarPorId(int id) {
 
 		Producto p;
 		boolean encontrado;
@@ -69,7 +69,7 @@ public class Tienda {
 
 		
 
-	}
+	}*/
 
 	// findbyB v2
 	// Hacerlo con el while

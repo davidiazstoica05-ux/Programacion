@@ -15,7 +15,8 @@ public class Venta2 {
 	
 	public double calcularMedia (double listaImpuesto[]) {
 		
-		double suma=0; 
+		double suma=0;
+		
 		
 		for (int i = 0; i < listaImpuesto.length; i++) {
 			
