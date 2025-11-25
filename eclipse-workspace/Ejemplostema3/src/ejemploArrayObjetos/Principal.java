@@ -46,7 +46,7 @@ public class Principal {
 			 
 			
 			//forma 2 
-			t.agregar(new Producto(nombreP, precio,), conProd);
+			t.agregar(new Producto(nombreP, precio), conProd);
 			conProd++;
 			
 			System.out.println("Si deseas terminar pulse 0, cualquier número para seguir");
