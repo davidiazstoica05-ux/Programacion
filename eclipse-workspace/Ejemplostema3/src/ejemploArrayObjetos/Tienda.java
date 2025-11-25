@@ -65,15 +65,6 @@ public class Tienda {
 				
 			} else {
 				encontrado = false;
-			}
-			
-			if (encontrado) {
-				
-				return i; 
-			} else {
-				return -1
-
-			}
 		}
 
 		
@@ -86,7 +77,7 @@ public class Tienda {
 
 		int i = 0;
 		boolean encontrado = false;
-
+		
 		while (i < listaProducto.length && !encontrado) {
 
 			if (listaProducto[i].getId() == id) {
