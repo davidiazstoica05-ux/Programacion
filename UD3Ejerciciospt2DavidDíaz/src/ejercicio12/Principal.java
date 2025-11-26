@@ -13,11 +13,11 @@ public class Principal {
 		Producto listaP[];
 		Producto p;
 		Tienda t;
-		double precio=0.0, porcentaje;
+		double precio = 0.0, porcentaje;
 
 		System.out.println("Bienvenido a su inventario de tiendas");
 		System.out.println("Para empezar diga el nombre de su tienda");
-		nombre = Leer.dato();
+		nombreT = Leer.dato();
 		System.out.println("Cuantos elementos vas a introducir");
 		tam = Leer.datoInt();
 		listaP = new Producto[tam];
@@ -26,10 +26,10 @@ public class Principal {
 			System.out.println("Diga el nombre del producto " + sumar);
 			nombre = Leer.dato();
 			System.out.println("Diga el precio del producto " + nombre);
-			precio = Leer.datoInt();
+			precio = Leer.datoDouble();
 			System.out.println("Diga la cantidad del producto " + nombre);
 			cantidad = Leer.datoInt();
-			System.out.println("Diga el ID del producto" + nombre);
+			System.out.println("Diga el ID del producto " + nombre);
 			id = Leer.datoInt();
 			p = new Producto(nombre, precio, cantidad, id);
 			System.out.println("Pulse 1 si el producto es fragil");
@@ -41,17 +41,18 @@ public class Principal {
 			t.agregar(p, cont);
 			cont++;
 			sumar++;
-			System.out.println("Para continuar pulse 1.\n Si deseas terminar pulse 0.");
+			System.out.println("Para continuar pulse 1.\nSi deseas terminar pulse 0.");
 			opcion = Leer.datoInt();
 		} while (opcion != 0 && cont < listaP.length);
-		
-		//Menú
+
+		// Menú
 		do {
-			System.out.println("---MENÚ---");
+			System.out.printf("---MENÚ Tienda %s---\n", nombreT);
 			System.out.println("Pulse 1 para mostrar todos los productos del inventario ");
 			System.out.println("Pulse 2 para mostrar el precio total de todos los productos");
 			System.out.println("Pulse 3 para calcular el PVP");
 			System.out.println("Pulse 4 para calcular las posibles ganancias");
+			System.out.println("Pulse 5 para saber si el objeto es frágil o no ");
 			System.out.println("Pulse 0 para salir");
 			opcionMenu = Leer.datoInt();
 
@@ -70,8 +71,26 @@ public class Principal {
 				id = Leer.datoInt();
 				System.out.println("¿Cuánto es el porcentaje del PVP?");
 				porcentaje = Leer.datoDouble();
-				System.out.printf("%.2f€\n", t.calcularPVP(t.buscarByID(id), porcentaje));
+				System.out.printf("El PVP aplicando un %.2f%% es: %.2f€\n", porcentaje, t.calcularPVP(p, porcentaje));
+				break;
 			case 4:
+				System.out.println("Diga el porcentaje que desea ganar");
+				porcentaje = Leer.datoDouble();
+				System.out.printf("El precio total de las ganancias asciende a: %.2f€ ",
+						t.calcularPosibleGanancias(porcentaje));
+
+				break;
+			case 5:
+				t.mostrarID();
+				System.out.println("Diga el ID del producto que desea saber si es frágil");
+				id = Leer.datoInt();
+				if (t.comprobarFragil(id)) {
+
+					System.out.println("El producto es frágil");
+				} else {
+
+					System.out.println("El producto no es frágil");
+				}
 
 				break;
 			case 0:
@@ -85,6 +104,7 @@ public class Principal {
 
 		} while (opcionMenu != 0);
 
+		System.out.println("Gracias por usar nuestro gestor de inventario");
 	}
 
 }

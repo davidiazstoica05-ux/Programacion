@@ -41,9 +41,7 @@ public class Tienda {
 
 	// mostrar
 	public void mostrar() {
-
 		for (int i = 0; i < listaProducto.length; i++) {
-
 			System.out.println(listaProducto[i]);
 		}
 
@@ -96,7 +94,11 @@ public class Tienda {
 
 	public double calcularPVP(Producto p, double porcentaje) {
 		int den = 100;
-		return p.getPrecioFabrica() + (p.getPrecioFabrica() * porcentaje / den);
+		if (p != null) {
+			return p.getPrecioFabrica() + (p.getPrecioFabrica() * porcentaje / den);
+		} else {
+			return 0.0;
+		}
 
 	}
 
@@ -107,6 +109,35 @@ public class Tienda {
 
 			System.out.printf(" ID %s: %d\n", listaProducto[i].getNombre(), listaProducto[i].getId());
 		}
+	}
+
+	// CalcularPosibleGanancias
+	public double calcularPosibleGanancias(double porcentaje) {
+		int den = 100;
+		double pvp, suma = 0;
+		for (int i = 0; i < listaProducto.length; i++) {
+			if (listaProducto[i] != null) {
+				pvp = listaProducto[i].getPrecioFabrica() + (listaProducto[i].getPrecioFabrica() * porcentaje / den);
+				suma += pvp;
+			}
+
+		}
+
+		return sumar()-suma;
+
+	}
+	//comprobarFragil
+	public boolean comprobarFragil(int id) {
+		Producto p;
+		
+		p= buscarByID(id);
+		if (p.isFragil()==true) {
+			return true;
+		} else {
+			return false; 
+		}
+		
+		
 	}
 
 }

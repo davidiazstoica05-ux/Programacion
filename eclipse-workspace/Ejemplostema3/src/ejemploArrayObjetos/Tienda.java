@@ -156,11 +156,11 @@ public class Tienda {
 	 * listaProducto[index].setActivo(false); } }
 	 */
 
-<<<<<<< HEAD
+
 	// Sumar todos los productos y media
-=======
+
 	// Sumar todos los productosy media
->>>>>>> refs/remotes/origin/main
+
 
 	public double sumar() {
 
@@ -183,6 +183,7 @@ public class Tienda {
 
 		/*
 		 * Hacer con while int i = 0; Producto[] listaAux = new
+		 * 	int i = 0;
 		 * Producto[listaProducto.length];
 		 * 
 		 * while (i < listaProducto.length) { if (name.equalsIgnoreCase(name)) {
@@ -192,13 +193,9 @@ public class Tienda {
 		 * 
 		 * } return listaAux;
 		 */
-<<<<<<< HEAD
-		
-=======
->>>>>>> refs/remotes/origin/main
+
 
 		// Hacer con for
-		int i = 0;
 		Producto[] listaAux = new Producto[listaProducto.length];
 
 		for (int j = 0; j < listaAux.length; j++) {
@@ -226,10 +223,8 @@ public class Tienda {
 	 * 
 	 * }
 	 */
-<<<<<<< HEAD
 	
 	//Que aplique un descuento al precio de los productos que estan deshabilitado
-=======
->>>>>>> refs/remotes/origin/main
+
 
 }
