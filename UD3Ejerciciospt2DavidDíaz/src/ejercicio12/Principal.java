@@ -33,16 +33,15 @@ public class Principal {
 			id = Leer.datoInt();
 			p = new Producto(nombre, precio, cantidad, id);
 			System.out.println("Pulse 1 si el producto es fragil");
-			System.out.println("Pulse 2 si no");
+			System.out.println("Pulse 2 si no lo es");
 			opcion1 = Leer.datoInt();
 			p.comprobar(opcion1);
 			System.out.println(p);
-			
 			t = new Tienda(nombre, listaP);
 			t.agregar(p, cont);
 			cont++;
 			sumar++;
-			System.out.println("Si deseas terminar pulse 0, \nPara continuar pulse 1");
+			System.out.println("Para continuar pulse 1.\n Si deseas terminar pulse 0.");
 			opcion = Leer.datoInt();
 		} while (opcion != 0 && cont < listaP.length);
 		
@@ -58,9 +57,7 @@ public class Principal {
 
 			switch (opcionMenu) {
 			case 1:
-
 				t.mostrar();
-
 				break;
 
 			case 2:
@@ -73,7 +70,7 @@ public class Principal {
 				id = Leer.datoInt();
 				System.out.println("¿Cuánto es el porcentaje del PVP?");
 				porcentaje = Leer.datoDouble();
-				System.out.printf("%.2f€\n", t.calcularPVP(id, porcentaje));
+				System.out.printf("%.2f€\n", t.calcularPVP(t.buscarByID(id), porcentaje));
 			case 4:
 
 				break;
