@@ -156,7 +156,11 @@ public class Tienda {
 	 * listaProducto[index].setActivo(false); } }
 	 */
 
+<<<<<<< HEAD
 	// Sumar todos los productos y media
+=======
+	// Sumar todos los productosy media
+>>>>>>> refs/remotes/origin/main
 
 	public double sumar() {
 
@@ -188,7 +192,10 @@ public class Tienda {
 		 * 
 		 * } return listaAux;
 		 */
+<<<<<<< HEAD
 		
+=======
+>>>>>>> refs/remotes/origin/main
 
 		// Hacer con for
 		int i = 0;
@@ -219,7 +226,10 @@ public class Tienda {
 	 * 
 	 * }
 	 */
+<<<<<<< HEAD
 	
 	//Que aplique un descuento al precio de los productos que estan deshabilitado
+=======
+>>>>>>> refs/remotes/origin/main
 
 }
