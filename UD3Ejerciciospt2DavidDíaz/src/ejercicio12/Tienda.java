@@ -82,33 +82,30 @@ public class Tienda {
 				i++;
 			}
 
-			if (encontrar) {
+		}
 
-				return listaProducto[i];
-			} else {
-				return null;
-			}
+		if (encontrar) {
+
+			return listaProducto[i];
+		} else {
+			return null;
 		}
 
 	}
 	// CalcularPVP
 
-	public double calcularPVP(int id, double porcentaje) {
+	public double calcularPVP(Producto p, double porcentaje) {
 		int den = 100;
-		Producto p;
-
-		p = buscarByID(id);
-
 		return p.getPrecioFabrica() + (p.getPrecioFabrica() * porcentaje / den);
 
 	}
-	
-	//mostrarID
-	
-	public void mostrarID () { 
+
+	// mostrarID
+
+	public void mostrarID() {
 		for (int i = 0; i < listaProducto.length; i++) {
-			
-			System.out.printf("ID %s: %d",listaProducto[i].getNombre(),listaProducto[i].getId());
+
+			System.out.printf(" ID %s: %d\n", listaProducto[i].getNombre(), listaProducto[i].getId());
 		}
 	}
 

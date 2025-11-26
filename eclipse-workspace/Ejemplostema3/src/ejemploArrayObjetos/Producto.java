@@ -5,14 +5,14 @@ public class Producto {
 	private String nombre; 
 	private double precio;
 	private int id; 
-	
-	
-	
-	public Producto(String nombre, double precio,int id) {
+	private boolean activo;
+	public Producto(String nombre, double precio, int id, boolean activo) {
 		super();
 		this.nombre = nombre;
 		this.precio = precio;
-		this.id=id;
+		this.id = id;
+		this.activo = activo;
+		
 	}
 	public String getNombre() {
 		return nombre;
@@ -26,18 +26,26 @@ public class Producto {
 	public void setPrecio(double precio) {
 		this.precio = precio;
 	}
-	
-	
 	public int getId() {
 		return id;
 	}
 	public void setId(int id) {
 		this.id = id;
 	}
+	public boolean isActivo() {
+		return activo;
+	}
+	public void setActivo(boolean activo) {
+		this.activo = activo;
+	}
+	
 	@Override
 	public String toString() {
-		return "Producto [nombre=" + nombre + ", precio=" + precio + ", id=" + id + "]";
-	}
+		return "Producto [nombre=" + nombre + ", precio=" + precio + ", id=" + id + ", activo=" + activo + "]";
+	} 
+	
+	
+	
 	
 	
 	
