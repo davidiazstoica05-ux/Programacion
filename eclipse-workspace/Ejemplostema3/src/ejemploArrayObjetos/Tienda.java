@@ -126,6 +126,7 @@ public class Tienda {
 
 	// BuscarTodos de normal se suele poner
 	public Producto[] getListaProd() {
+		
 		return listaProducto;
 
 	}
