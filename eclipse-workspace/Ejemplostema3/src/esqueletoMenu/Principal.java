@@ -16,10 +16,13 @@ public class Principal {
 		 System.out.println("Pulse 5 para ");
 		 System.out.println("Pulse 6 para ");
 		 System.out.println("Pulse 7 para ");
-		opcion=Leer.datoInt();
+		 opcion=Leer.datoInt();
 		 
 			 switch (opcion) {
 				case 1:
+					
+					System.out.println("");
+					
 					
 					break;
 	

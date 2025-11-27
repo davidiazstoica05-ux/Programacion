@@ -31,7 +31,7 @@ public class Tienda {
 
 	@Override
 	public String toString() {
-		return "Tienda [nombre=" + nombre + ", listaProducto=" + Arrays.toString(listaProducto) + "]";
+		return "Tienda nombre=" + nombre + ", listaProducto=" + Arrays.toString(listaProducto) + "";
 	}
 
 	// agregar

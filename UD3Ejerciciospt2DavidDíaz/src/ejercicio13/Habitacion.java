@@ -3,18 +3,18 @@ package ejercicio13;
 public class Habitacion {
 
 	private int numHabitacion;
-	private  String tipo;
+	private  int tipo;
 	private double precioBase;
 	private String nombreCliente;
 	private boolean limpieza;
 	private boolean ocupada;
 
-	public Habitacion(int numHabitacion, String tipo, double precioBase, String nombreCliente) {
+	public Habitacion(int numHabitacion, int tipo, double precioBase,boolean ocupada) {
 		super();
 		this.numHabitacion = numHabitacion;
 		this.tipo = tipo;
 		this.precioBase = precioBase;
-		this.nombreCliente = nombreCliente;
+		this.ocupada=ocupada;
 	}
 
 
@@ -36,14 +36,14 @@ public class Habitacion {
 
 
 
-	public String getTipo() {
+	public int getTipo() {
 		return tipo;
 	}
 
 
 
 
-	public void setTipo(String tipo) {
+	public void setTipo(int tipo) {
 		this.tipo = tipo;
 	}
 

@@ -19,7 +19,7 @@ public class Hotel {
 		this.excursion = excursion;
 		this.zonaVip = zonaVip;
 	}
-	
+
 	public Habitacion[] getHabitaciones() {
 		return habitaciones;
 	}
@@ -28,15 +28,33 @@ public class Hotel {
 		this.habitaciones = habitaciones;
 	}
 
+	public boolean isBar() {
+		return bar;
+	}
+
+	public void setBar(boolean bar) {
+		this.bar = bar;
+	}
+
+	public boolean isExcursion() {
+		return excursion;
+	}
+
+	public void setExcursion(boolean excursion) {
+		this.excursion = excursion;
+	}
+
+	public boolean isZonaVip() {
+		return zonaVip;
+	}
+
+	public void setZonaVip(boolean zonaVip) {
+		this.zonaVip = zonaVip;
+	}
+
 	@Override
 	public String toString() {
 		return "Hotel [habitaciones=" + Arrays.toString(habitaciones) + "]";
-	}
-
-	// agregar
-
-	public void agregar(Habitacion habitacion, int cont) {
-		habitaciones[cont] = habitacion;
 	}
 
 	// BuscarPorNum
@@ -86,24 +104,33 @@ public class Hotel {
 	public void mostrarHabitaciones() {
 
 		System.out.println("Habitaciones\n");
-		for (int i = 0; i < habitaciones.length; i++) {
-			System.out.printf("Habitacion Número: %.2f\n", habitaciones[i]);
+		for (int i = 0; i < habitaciones.length && habitaciones[i]!= null; i++) {
+			System.out.printf("Habitacion Número: %d\n", habitaciones[i].getNumHabitacion());
 		}
 
 	}
 
-	// comprobar
-	public boolean comprobarOcupacionS(int numero) {
-			
-			Habitacion h=buscarPorNum(numero);
-			if (h.isOcupada()==true) {
-				return true;
-				
-			} else {
-				
-				return false;
-			}
-			
+	// ocuparHabitacion
+	public void setOcuparHabitacion(int num, String nombre) {
+		habitaciones[num - 1].setNombreCliente(nombre);
+		habitaciones[num - 1].setOcupada(true);
+
+	}
+
+	// comprobarBar
+	public boolean comprobar(int num) {
+
+		if (num == 1) {
+
+			return true;
+		} else {
+
+			return false;
+
 		}
+
+	}
+	
+	
 
 }

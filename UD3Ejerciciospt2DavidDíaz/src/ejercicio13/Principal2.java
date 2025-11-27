@@ -49,7 +49,7 @@ public class Principal2 {
 
 		do {
 			System.out.printf("----Hotel----");
-			System.out.println("Pulse 1 para ver si la habitación esta ocupada o no");
+			System.out.println("Pulse 1 para agregar la habitación");
 			System.out.println("Pulse 2 para mostrar el precio total de todos los productos");
 			System.out.println("Pulse 3 para calcular el PVP");
 			System.out.println("Pulse 4 para calcular las posibles ganancias");
