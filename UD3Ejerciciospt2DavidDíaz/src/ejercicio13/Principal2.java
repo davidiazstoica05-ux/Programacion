@@ -18,9 +18,8 @@ public class Principal2 {
 		System.out.println("Bienvenido a su hotel");
 		System.out.println("Diga cuantas habitaciones tiene su hotel");
 		tam = Leer.datoInt();
-		ht=new Hotel(tam, true, true, true);
 		
-		// rellenar
+		// rellenar todo esto va en el uno
 
 		do {
 			System.out.println("Introduzca el nombre del cliente");
