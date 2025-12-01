@@ -138,7 +138,7 @@ Producto \[] listaAux = new Producto \[listaProducto.lenght]
 
 
 
-for (int i = 0; listaAux.lenght; i++)
+for (int i = 0; i < listaAux.lenght; i++)
 
 
 
