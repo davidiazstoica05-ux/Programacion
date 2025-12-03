@@ -50,13 +50,16 @@ public class Administracion {
 		}
 
 	}
-	
+
 	public void mostrarID() {
-		
+
 		for (int i = 0; i < profesores.length; i++) {
-			System.out.printf("%d = %s",profesores[i].getId(),profesores[i].getNombre());
+			if (profesores[i] != null) {
+				System.out.printf("%d = %s", profesores[i].getId(), profesores[i].getNombre());
+			}
+
 		}
-		
+
 	}
 
 	// Buscar por id
@@ -85,37 +88,85 @@ public class Administracion {
 		}
 
 	}
-	
+
 	public void mostrar(int id) {
-		
-		Profesor p=buscarById(id); 
-		
-		if (p!=null) {
-			
+
+		Profesor p = buscarById(id);
+
+		if (p != null) {
+
 			System.out.println(p);
-			
+
 		} else {
-			
+
 			System.out.println("No hay profesor");
 
 		}
 	}
-	
-	//buscar mas de 20 años 
-	
-	public Profesor findByAnyos(int anyos) {
-		
-		Profesor listaAux [] = new Profesor [profesores.length];
-		int i = 0; 
-		
-		while Administracion() {
+
+	// buscar mas de 20 años
+
+	public Profesor[] findByAnyos(int anyos,int cont) {
+
+		Profesor[] listaAux = new Profesor[profesores.length];
+		for (int i = 0; i < cont ; i++) {
+
+			if (profesores[i].getAnyosAntiguedad() >= anyos && profesores[i] != null) {
+
+				listaAux[i] = profesores[i];
+			}
 			
+			
+
 		}
 		
-		
+		return listaAux;
+
 	}
-	
-	
-	//CalcularGastos
-	
+	// mostraraprtirAños
+
+	public void mostrarAnyos( Profesor[] listaAux) {
+
+		for (int i = 0; i < listaAux.length; i++) {
+			
+			if (listaAux !=null) {
+				
+				System.out.println(listaAux[i]);
+			}
+			
+		}
+
+	}
+
+	// CalcularGastos
+
+	public double calcularGastosNominas(int anyos, double cantidad, double porcentaje,int cont) {
+
+		Profesor listaAux[] = findByAnyos(anyos,cont);
+		double sueldo, suma = 0;
+
+		for (int i = 0; i < listaAux.length; i++) {
+
+			if (listaAux[i] != null) {
+				sueldo = listaAux[i].calcularSueldo(cantidad, porcentaje);
+				suma += sueldo;
+			}
+		}
+
+		return suma;
+
+	}
+
+	// modificarNumeroHoras
+
+	public void modificarAnyos(int id, int nuevaAnyos) {
+
+		Profesor p = buscarById(id);
+		if (p != null) {
+
+			p.setAnyosAntiguedad(nuevaAnyos);
+
+		}
+	}
+
 }

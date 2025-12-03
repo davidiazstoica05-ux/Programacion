@@ -108,11 +108,6 @@ public class GestionFamiliar {
 
 		}
 
-		for (int i = 0; i < listaAux.length; i++) {
-
-			System.out.println(listaAux[i]);
-
-		}
 		return listaAux;
 
 	}

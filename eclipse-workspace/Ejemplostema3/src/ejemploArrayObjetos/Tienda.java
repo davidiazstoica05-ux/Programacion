@@ -214,7 +214,7 @@ public class Tienda {
 	/*
 	 * public void modificarNombre (String name, String nuevoNombre) {
 	 * 
-	 * Producto p[]=findByName(name);
+	 * Producto p=findByName(id);
 	 * 
 	 * if (p != null) {
 	 * 
