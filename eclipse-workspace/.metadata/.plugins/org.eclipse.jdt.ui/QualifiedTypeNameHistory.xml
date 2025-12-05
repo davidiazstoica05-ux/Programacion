@@ -10,6 +10,7 @@
     <fullyQualifiedTypeName name="java.nio.file.spi.FileSystemProvider"/>
     <fullyQualifiedTypeName name="examenB.Profesor"/>
     <fullyQualifiedTypeName name="examenB.Administracion"/>
-    <fullyQualifiedTypeName name="correccionT3.GestionFamiliar"/>
     <fullyQualifiedTypeName name="utilidades.Leer"/>
+    <fullyQualifiedTypeName name="correccionT3.GestionFamiliar"/>
+    <fullyQualifiedTypeName name="correccionT3.Hijo"/>
 </qualifiedTypeNameHistroy>

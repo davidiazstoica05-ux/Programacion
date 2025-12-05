@@ -59,13 +59,20 @@ public class GestionFamiliar {
 
 		for (int i = 0; i < listaHijos.length; i++) {
 
-			System.out.printf("ID: %d\n", listaHijos[i].getId());
+			if (listaHijos[i] != null) {
+				System.out.printf("ID: %d, %s\n", listaHijos[i].getId(), listaHijos[i].getNombre());
+			} else {
+
+				System.out.println(" ");
+
+			}
 
 		}
 
 	}
 
-	public Hijo buscarPorId(int id) {
+	// Se puede usar por cont.
+	public Hijo buscarPorId(int id, int cont) {
 
 		int i = 0;
 		boolean encontrar = false;
@@ -93,13 +100,27 @@ public class GestionFamiliar {
 
 	}
 
+	// Versión 2 de buscar por ID, con null. 
+
+	public Hijo buscarPorID2(int id) {
+		for (int i = 0; i < listaHijos.length; i++) {
+			if (listaHijos[i].getId() == id) {
+				return listaHijos[i];
+
+			}
+
+		}
+		return null;
+
+	}
+
 	// Hijos menores de 14años
 
-	public Hijo[] buscarMenores14() {
+	public Hijo[] buscarMenores14(int cont) {
 
 		Hijo listaAux[] = new Hijo[listaHijos.length];
 		int catorce = 14;
-		for (int i = 0; i < listaAux.length; i++) {
+		for (int i = 0; i < listaHijos.length; i++) {
 
 			if (listaHijos[i].getEdad() < catorce) {
 
@@ -116,9 +137,7 @@ public class GestionFamiliar {
 	public void mostrarMenores(Hijo listaMenores[]) {
 
 		for (int i = 0; i < listaMenores.length; i++) {
-			if (listaMenores != null) {
-				System.out.println(listaMenores[i]);
-			}
+			System.out.println(listaMenores[i]);
 
 		}
 	}
@@ -145,8 +164,8 @@ public class GestionFamiliar {
 
 	// modificar
 
-	public boolean modificarHorasEstudiadas(int id, int nuevHora) {
-		Hijo h = buscarPorId(id);
+	public boolean modificarHorasEstudiadas(int id, int nuevHora, int cont) {
+		Hijo h = buscarPorId(id, cont);
 		if (h != null) {
 			h.setHorasEstudias(nuevHora);
 			return true;
@@ -155,32 +174,28 @@ public class GestionFamiliar {
 		}
 	}
 
-	
-	  //sumarTotal
-	  
-	  public double sumarTotal(double cant,int cont) {
-	  
-		  double suma=0;
-		  for (int i = 0; i < cont; i++) {
-			  suma=+cant; 
+	// sumarTotal
+
+	public double sumarTotal(double cant, int cont) {
+
+		double suma = 0;
+		for (int i = 0; i < cont; i++) {
+			suma = +cant;
 		}
-		  return suma;
-	  
-	  
-	  }
-	  
-	 //presupuestoRestante
-	  
-	  public double restarPresupuesto(double suma) {
-	  
-	  double total; 
-	  
-	  total=presupuestoTotal-suma;
-	  
-	  return total;
-	  
-	  
-	  }
-	 
+		return suma;
+
+	}
+
+	// presupuestoRestante
+
+	public double restarPresupuesto(double suma) {
+
+		double total;
+
+		total = presupuestoTotal - suma;
+
+		return total;
+
+	}
 
 }

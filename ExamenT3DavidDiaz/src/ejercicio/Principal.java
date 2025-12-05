@@ -21,22 +21,6 @@ public class Principal {
 		presupuesto = Leer.datoDouble();
 		listaHijos = new Hijo[tam];
 		gF = new GestionFamiliar(listaHijos, presupuesto);
-
-		do {
-			System.out.println("Diga el nombre del hijo");
-			nombre = Leer.dato();
-			System.out.println("Diga su número identificativo");
-			id = Leer.datoInt();
-			System.out.println("Diga su edad");
-			edad = Leer.datoInt();
-			System.out.println("Diga las horas estudiadas");
-			horasEstudiadas = Leer.datoInt();
-			listaHijos[cont] = new Hijo(nombre, id, edad, horasEstudiadas);
-			System.out.println("Pulse 1 si desea continuar rellenando. \nPulse cualquier otro en caso de que no");
-			opcion = Leer.datoInt();
-			cont++;
-		} while (opcion != 0 && cont < listaHijos.length);
-
 		System.out.println("Cuánto es la cantidad del pago");
 		cantidad = Leer.datoDouble();
 		System.out.println("Cuál es el porcentaje que se destinara al bote pizzas");
@@ -79,23 +63,23 @@ public class Principal {
 				gF.mostrarID();
 				System.out.println("Introduzca el id del hijo que desea buscar");
 				id = Leer.datoInt();
-				if (gF.buscarPorId(id) != null) {
-
-					System.out.println("Hijo encontrado: " + gF.buscarPorId(id));
-
+				if (gF.buscarPorId(id, cont) !=null) {
+					System.out.println("Hijo encontrado: " + gF.buscarPorId(id,cont));
 				} else {
-
-					System.out.println("No hay ningun hijo con ese ID");
-
+					
+					System.out.println("Hijo no encontrado");
 				}
+					
+
+			
 
 				break;
 			case 3:
 
 				System.out.println("Buscando hijos menores de 14 años...");
 
-				if (gF.buscarMenores14() != null) {
-					gF.mostrarMenores(gF.buscarMenores14());
+				if (gF.buscarMenores14(cont) != null) {
+					gF.mostrarMenores(gF.buscarMenores14(cont));
 					
 				} else {
 
@@ -113,7 +97,7 @@ public class Principal {
 				id = Leer.datoInt();
 				System.out.println("¿Cuántas son las horas nuevas?");
 				horasNuevas = Leer.datoInt();
-				if (gF.modificarHorasEstudiadas(id, horasNuevas)) {
+				if (gF.modificarHorasEstudiadas(id, horasNuevas,cont)) {
 					System.out.println("Cambio efectuado correctamente");
 					gF.mostrar();
 				} else {
@@ -121,7 +105,7 @@ public class Principal {
 				}
 
 				break;
-			case 6:
+  			case 6:
 				
 				System.out.printf("El presupuesto restante despues de los pagos es de: %.2f\n",gF.restarPresupuesto(gF.sumarTotal(cantidad, cont)));
 				break;

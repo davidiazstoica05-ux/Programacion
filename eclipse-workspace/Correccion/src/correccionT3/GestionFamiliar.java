@@ -35,6 +35,43 @@ public class GestionFamiliar {
 				+ "]";
 	} 
 	
+	//Agregar
+	
+	public void agregar (Hijo h, int cont) {
+		listaHijos[cont]=h; 
+		
+	}
+	
+	
+	public Hijo buscarPorId(int id) {
+
+		int i = 0;
+		boolean encontrar = false;
+
+		while (i < listaHijos.length && !encontrar) {
+
+			if (listaHijos[i].getId() == id) {
+
+				encontrar = true;
+
+			} else {
+
+				i++;
+			}
+
+		}
+		if (encontrar) {
+
+			return listaHijos[i];
+
+		} else {
+			return null;
+
+		}
+
+	}
+	
+	
 	
 	
 	
