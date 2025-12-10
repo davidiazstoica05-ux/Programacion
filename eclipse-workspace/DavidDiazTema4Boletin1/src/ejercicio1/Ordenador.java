@@ -21,4 +21,15 @@ public class Ordenador {
 				+ precioBase + ", marca=" + marca + "]";
 	}
 
+	public double calcularPVP(double porcentaje) {
+
+		int den = 100;
+		double ganancia;
+
+		ganancia = porcentaje / den;
+
+		return ganancia + precioBase;
+
+	}
+
 }
