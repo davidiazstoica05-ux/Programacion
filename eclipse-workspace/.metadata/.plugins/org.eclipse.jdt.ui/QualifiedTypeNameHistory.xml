@@ -13,4 +13,7 @@
     <fullyQualifiedTypeName name="correccionT3.GestionFamiliar"/>
     <fullyQualifiedTypeName name="correccionT3.Hijo"/>
     <fullyQualifiedTypeName name="utilidades.Leer"/>
+    <fullyQualifiedTypeName name="ejemplo01.Persona"/>
+    <fullyQualifiedTypeName name="ejemplo01.Alumno"/>
+    <fullyQualifiedTypeName name="ejercicio1.Ordenador"/>
 </qualifiedTypeNameHistroy>
