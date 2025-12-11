@@ -35,6 +35,13 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+<<<<<<< HEAD
+			<item value="C:\Users\diaz.stdav24_triana\Programacion\eclipse-workspace\EjemplosTema4"/>
+			<item value="C:\Users\diaz.stdav24_triana\Programacion\eclipse-workspace\DavidDiazTema4Boletin1"/>
+=======
+>>>>>>> b3ef0977c02e6b7395fcadbe679248f07a016547
+			<item value="C:\Users\david\dam\Programacion\eclipse-workspace\DavidDiazTema4Boletin1"/>
+			<item value="C:\Users\david\dam\Programacion\eclipse-workspace\EjemplosTema4"/>
 			<item value="C:\Users\diaz.stdav24_triana\Downloads\ExamenT3DavidDiaz (1)"/>
 			<item value="C:\Users\diaz.stdav24_triana\Programacion\eclipse-workspace\Ejemplostema3"/>
 			<item value="C:\Users\diaz.stdav24_triana\Programacion"/>
@@ -51,17 +58,18 @@
 			<item value="C:\Users\david\eclipse-workspace\UD2Ejercicio2DavidDiaz1"/>
 			<item value="C:\Users\david\eclipse-workspace\UD2Ejercicio2DavidDiaz (1)\UD2Ejercicio2DavidDiaz"/>
 			<item value="C:\Users\david\eclipse-workspace\Hola_Mundo"/>
+<<<<<<< HEAD
+=======
 			<item value="C:\Users\david\eclipse-workspace\UD1Ejercicios2DavidDiaz"/>
 			<item value="C:\Users\david\eclipse-workspace\UD1Ejercicios1DavidDiaz"/>
-			<item value="C:\Users\david\Downloads\UD1Ejercicios1DavidDiaz"/>
-			<item value="C:\Users\diaz.stdav24_triana\Downloads\eclipse-workspace-20250919T112732Z-1-001"/>
+>>>>>>> b3ef0977c02e6b7395fcadbe679248f07a016547
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
 			<item value=""/>
 		</list>
 		<section name="ExternalProjectImportWizard.dialogBounds">
 			<item key="DIALOG_X_ORIGIN" value="1318"/>
-			<item key="DIALOG_Y_ORIGIN" value="338"/>
+			<item key="DIALOG_Y_ORIGIN" value="344"/>
 			<item key="DIALOG_WIDTH" value="525"/>
 			<item key="DIALOG_HEIGHT" value="710"/>
 			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
@@ -74,5 +82,19 @@
 	<section name="WORKBENCH_SETTINGS">
 		<list key="ENABLED_TRANSFERS">
 		</list>
+	</section>
+	<section name="org.eclipse.ui.dialogs.FilteredResourcesSelectionDialog">
+		<item key="ShowStatusLine" value="true"/>
+		<item key="History" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;History&gt;&#x0D;&#x0A;&lt;historyRootNode/&gt;&#x0D;&#x0A;&lt;/History&gt;"/>
+		<item key="ShowDerived" value="false"/>
+		<item key="FilterByLocation" value="false"/>
+		<item key="WorkingSet" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;workingSet workingSetName=&quot;&quot;/&gt;"/>
+		<section name="DialogBoundsSettings">
+			<item key="DIALOG_HEIGHT" value="500"/>
+			<item key="DIALOG_WIDTH" value="600"/>
+			<item key="DIALOG_X_ORIGIN" value="668"/>
+			<item key="DIALOG_Y_ORIGIN" value="195"/>
+			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		</section>
 	</section>
 </section>
