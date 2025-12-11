@@ -36,8 +36,11 @@
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
 <<<<<<< HEAD
+<<<<<<< HEAD
 			<item value="C:\Users\diaz.stdav24_triana\Programacion\eclipse-workspace\EjemplosTema4"/>
 			<item value="C:\Users\diaz.stdav24_triana\Programacion\eclipse-workspace\DavidDiazTema4Boletin1"/>
+=======
+>>>>>>> b3ef0977c02e6b7395fcadbe679248f07a016547
 =======
 >>>>>>> b3ef0977c02e6b7395fcadbe679248f07a016547
 			<item value="C:\Users\david\dam\Programacion\eclipse-workspace\DavidDiazTema4Boletin1"/>
@@ -62,6 +65,9 @@
 =======
 			<item value="C:\Users\david\eclipse-workspace\UD1Ejercicios2DavidDiaz"/>
 			<item value="C:\Users\david\eclipse-workspace\UD1Ejercicios1DavidDiaz"/>
+<<<<<<< HEAD
+>>>>>>> b3ef0977c02e6b7395fcadbe679248f07a016547
+=======
 >>>>>>> b3ef0977c02e6b7395fcadbe679248f07a016547
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
